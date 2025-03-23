@@ -58,7 +58,7 @@ A Django-based Library Management System that allows administrators to manage bo
 
 5. Create the MySQL database:
    ```sql
-   CREATE DATABASE library_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+   CREATE DATABASE library_management
    ```
 
 6. Apply migrations:
