@@ -1,0 +1,276 @@
+/* Custom CSS for Library Application */
+
+/* Global Styles */
+:root {
+    --primary-color: #356bbd;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --body-bg: #f5f8fa;
+    --card-border: rgba(0, 0, 0, 0.125);
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--body-bg);
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 3rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Card Styling */
+  .card {
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1.25rem;
+  }
+  
+  .card-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  /* Form Styling */
+  .form-control {
+    border-radius: 4px;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #ced4da;
+    transition: var(--transition);
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(53, 107, 189, 0.25);
+  }
+  
+  .form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #495057;
+  }
+  
+  /* Button Styling */
+  .btn {
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: #2a5699;
+    border-color: #2a5699;
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+  }
+  
+  .btn-warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: #212529;
+  }
+  
+  .btn-info {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+    color: white;
+  }
+  
+  .btn-link {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+    color: #2a5699;
+  }
+  
+  /* Table Styling */
+  .table {
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    border-color: #5786ca;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  
+  .table tr:hover {
+    background-color: rgba(53, 107, 189, 0.05);
+  }
+  
+  /* Alert Styling */
+  .alert {
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  
+  /* Book Cards in Student View */
+  .student-view .card {
+    height: 100%;
+    border-radius: 8px;
+    transition: var(--transition);
+  }
+  
+  .student-view .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-view .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .student-view .card-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navbar/Header for all pages */
+  .navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+    
+    .card {
+      margin-bottom: 1.5rem;
+    }
+    
+    .table-responsive {
+      box-shadow: var(--box-shadow);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+  
+  /* Animation for loading and transitions */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  /* Login/Signup page specific */
+  .auth-card {
+    max-width: 450px;
+    margin: 5rem auto;
+  }
+  
+  .auth-card .card-header {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .auth-card .card-body {
+    padding: 2rem;
+  }
+  
+  /* Book list actions column */
+  .actions-column {
+    white-space: nowrap;
+  }
+  
+  /* Book detail view enhancement */
+  .book-detail {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #f8f9fa;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+    color: #6c757d;
+  }
