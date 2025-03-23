@@ -28,7 +28,7 @@ A Django-based Library Management System that allows administrators to manage bo
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd library-project
+   cd keywordioTask
    ```
 
 2. Create a virtual environment and activate it:
